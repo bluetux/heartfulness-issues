@@ -1,0 +1,45 @@
+name: Public to Private Sync
+on:
+  issues:
+    types: [opened, closed, reopened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to Private
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.ISSUE_SYNC }}
+          script: |
+            const { action, issue, comment } = context.payload;
+            const repoOpts = { owner: 'bluetux', repo: 'heartfulness' }; // 프라이빗 리포 이름
+
+            // 1. 이슈 생성 및 상태(열림/닫힘) 동기화
+            if (context.eventName === 'issues') {
+              if (action === 'opened') {
+                await github.rest.issues.create({
+                  ...repoOpts,
+                  title: issue.title,
+                  body: `사용자 제보 원본: ${issue.html_url}\n\n${issue.body}`
+                });
+              } else {
+                // 번호가 1:1로 맞으므로 issue.number를 그대로 사용
+                await github.rest.issues.update({
+                  ...repoOpts,
+                  issue_number: issue.number,
+                  state: issue.state
+                });
+              }
+            } 
+            
+            // 2. 댓글 동기화
+            else if (context.eventName === 'issue_comment') {
+              await github.rest.issues.createComment({
+                ...repoOpts,
+                issue_number: issue.number,
+                body: `**[Public] ${comment.user.login}:**\n\n${comment.body}`
+              });
+            }
