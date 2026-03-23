@@ -1,8 +1,6 @@
 name: Public to Private Sync
-
 on:
   issues:
-    # 모든 액션을 감시해서 Private과 싱크를 맞춰야 함
     types: [opened, edited, closed, reopened, labeled, unlabeled]
   issue_comment:
     types: [created]
@@ -17,54 +15,54 @@ jobs:
           github-token: ${{ secrets.ISSUE_SYNC }}
           script: |
             const { action, issue, comment, sender } = context.payload;
-            const target = { owner: 'bluetux', repo: 'heartfulness' };
+            const targetRepo = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [1] 루프 차단: 봇이거나 관리자가 보낸 [Manager] 댓글은 무시
             if (sender.type === 'Bot') return;
             if (comment && comment.body.includes('> **[Manager]**')) return;
 
-            // [2] 동기화 대상 판별 (가장 중요)
-            const bodyText = issue.body || '';
-            const match = bodyText.match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
-
-            if (!match) {
-              console.log('이 이슈는 마커가 없는 Public 전용 이슈입니다. 동기화를 하지 않습니다.');
-              // 만약 Public 전용 이슈도 보고받고 싶다면 여기에 별도 로직이 필요해.
-              return;
-            }
-
-            const privateIssueNumber = parseInt(match[1], 10);
-            console.log(`매칭된 Private 이슈 번호 발견: #${privateIssueNumber}`);
-
-            // [3] 댓글 동기화
-            if (context.eventName === 'issue_comment') {
-              try {
-                await github.rest.issues.createComment({
-                  ...target,
-                  issue_number: privateIssueNumber,
-                  body: `> **[Public User]** _@${sender.login}_\n\n${comment.body}`
-                });
-                console.log('댓글 동기화 성공');
-              } catch (e) {
-                console.error('댓글 동기화 실패:', e.message);
-              }
+            // [1] 마커로 연결된 Private 이슈 번호 추출
+            const match = (issue.body ?? '').match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
+            
+            // [2] 댓글 동기화 (연결된 이슈가 있을 때만)
+            if (context.eventName === 'issue_comment' && match) {
+              const privateNum = parseInt(match[1], 10);
+              await github.rest.issues.createComment({
+                ...targetRepo,
+                issue_number: privateNum,
+                body: `> **[Public]** _@${sender.login}_\n\n${comment.body}`
+              });
             } 
             
-            // [4] 이슈 본체 및 상태 동기화 (Edited, Closed, Reopened, Labeled 등)
+            // [3] 이슈 본체 동기화
             else if (context.eventName === 'issues') {
-              try {
-                const labels = issue.labels ? issue.labels.map(l => l.name) : [];
-                
-                // Public에서 유저가 수정한 내용을 Private에 업데이트
-                await github.rest.issues.update({
-                  ...target,
-                  issue_number: privateIssueNumber,
-                  title: issue.title,    // 유저가 제목을 바꿨을 때 싱크
-                  state: issue.state,    // 유저가 이슈를 닫거나 열었을 때 싱크
-                  labels: labels         // 유저가 라벨을 조작했을 때 싱크
+              const labels = issue.labels ? issue.labels.map(l => l.name) : [];
+              
+              if (action === 'opened' && !match) {
+                // Public에서 새로 생성된 이슈 -> Private에 새로 생성
+                const { data: newPrivate } = await github.rest.issues.create({
+                  ...targetRepo,
+                  title: `[Public] ${issue.title}`,
+                  body: `${issue.body ?? ''}\n\n`,
+                  labels
                 });
-                console.log(`Private #${privateIssueNumber} 상태/라벨/제목 동기화 완료 (Action: ${action})`);
-              } catch (e) {
-                console.error('이슈 상태 업데이트 실패:', e.message);
+
+                // 생성 후 Public 이슈 본문에 Private 마커를 박아서 연결 (중요!)
+                const newMarker = ``;
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  body: `${issue.body ?? ''}\n\n${newMarker}`
+                });
+              } else if (match) {
+                // 이미 연결된 이슈면 상태 업데이트
+                const privateNum = parseInt(match[1], 10);
+                await github.rest.issues.update({
+                  ...targetRepo,
+                  issue_number: privateNum,
+                  title: issue.title,
+                  state: issue.state,
+                  labels
+                });
               }
             }
