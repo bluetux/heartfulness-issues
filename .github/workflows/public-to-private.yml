@@ -1,25 +1,65 @@
 name: Public to Private Sync
+
 on:
   issue_comment:
     types: [created]
+  issues:
+    types: [closed, reopened]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Private
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.ISSUE_SYNC }}
           script: |
             const { action, issue, comment } = context.payload;
-            const repoOpts = { owner: 'bluetux', repo: 'heartfulness' };
+            const target = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [절대 규칙] 작성자가 Bot이면 즉시 종료 (무한 루프 방지)
+            // ── 루프 차단 ──────────────────────────────────────────────
+            // 봇 계정이 만든 이벤트는 모두 무시
+            if (issue.user.type === 'Bot') return;
             if (comment && comment.user.type === 'Bot') return;
 
-            await github.rest.issues.createComment({
-              ...repoOpts,
-              issue_number: issue.number,
-              body: `**[Public] ${comment.user.login}:**\n\n${comment.body}`
-            });
+            // Private→Public 동기화가 달아준 댓글이면 무시 (역방향 에코 방지)
+            if (comment && comment.body.startsWith('> **[Manager]')) return;
+
+            // ── Private 이슈 번호 추출 ──────────────────────────────────
+            // Public 이슈 본문의 <!-- private-origin: URL --> 에서 번호 파싱
+            const bodyText = issue.body ?? '';
+            const match = bodyText.match(
+              /<!--\s*private-origin:\s*https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)\s*-->/
+            );
+
+            if (!match) {
+              console.log('No private-origin marker found — not a synced issue, skipping.');
+              return;
+            }
+
+            const privateIssueNumber = parseInt(match[1], 10);
+
+            // ── 케이스 1: 댓글 동기화 ──────────────────────────────────
+            if (context.eventName === 'issue_comment') {
+              // Public repo에 계정이 없을 수 있으므로 작성자 이름을 댓글에 명시
+              await github.rest.issues.createComment({
+                ...target,
+                issue_number: privateIssueNumber,
+                body: [
+                  `> **[Public]** _@${comment.user.login}_`,
+                  '',
+                  comment.body,
+                ].join('\n'),
+              });
+              return;
+            }
+
+            // ── 케이스 2: 이슈 상태 동기화 (closed / reopened) ──────────
+            if (context.eventName === 'issues') {
+              await github.rest.issues.update({
+                ...target,
+                issue_number: privateIssueNumber,
+                state: issue.state,
+              });
+            }
