@@ -1,7 +1,5 @@
 name: Public to Private Sync
 on:
-  issues:
-    types: [opened, closed, reopened]
   issue_comment:
     types: [created]
 
@@ -17,25 +15,15 @@ jobs:
             const { action, issue, comment } = context.payload;
             const repoOpts = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [무한루프 방지] 매니저가 쓴 댓글이나 이미 동기화된 이슈는 무시
-            if (comment && comment.body.includes('**[Manager]**')) return;
-            if (issue.title.includes('[#')) return;
+            // [루프 차단 핵심] 봇(system)이 작성한 댓글은 절대 동기화하지 않음!
+            if (comment && comment.user.type === 'Bot') {
+              console.log("봇이 작성한 댓글이므로 무시합니다.");
+              return;
+            }
 
-            if (context.eventName === 'issues') {
-              if (action === 'opened') {
-                await github.rest.issues.create({
-                  ...repoOpts,
-                  title: issue.title,
-                  body: `사용자 제보 원본: ${issue.html_url}\n\n${issue.body}`
-                });
-              } else {
-                await github.rest.issues.update({
-                  ...repoOpts,
-                  issue_number: issue.number,
-                  state: issue.state
-                });
-              }
-            } else if (context.eventName === 'issue_comment') {
+            // [댓글 동기화] 일반 사용자가 퍼블릭에 쓴 댓글만 프라이빗으로 복사
+            if (context.eventName === 'issue_comment') {
+              console.log("사용자 댓글을 프라이빗으로 복사합니다.");
               await github.rest.issues.createComment({
                 ...repoOpts,
                 issue_number: issue.number,
