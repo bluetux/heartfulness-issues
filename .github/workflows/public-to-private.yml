@@ -17,42 +17,34 @@ jobs:
             const { action, issue, comment, sender } = context.payload;
             const target = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [루프 차단] 봇이거나 Private에서 배포된 이슈면 중단
+            // [절대 방어] 봇이거나 Private에서 온 마커면 종료
             if (sender.type === 'Bot' || (issue.body && issue.body.includes(''))) return;
             if (comment && comment.body.includes('')) return;
 
-            const match = (issue.body || '').match(/private-id: #(\d+)/);
-            const privateNumber = match ? parseInt(match[1], 10) : null;
+            // 1. 본문에서 Private 이슈 URL 추출 (중요: 업데이트 API를 안 써도 되게끔)
+            const match = (issue.body || '').match(/from-private: (https:\/\/github\.com\/bluetux\/heartfulness\/issues\/(\d+))/);
+            const privateNumber = match ? parseInt(match[2], 10) : null;
 
             if (context.eventName === 'issue_comment' && privateNumber) {
               await github.rest.issues.createComment({
-                ...target,
-                issue_number: privateNumber,
-                body: `${comment.body}\n\n\n> **[Public User]** _@${sender.login}_`
+                ...target, issue_number: privateNumber,
+                body: `${comment.body}\n\n\n> **[Public User]**`
               });
             } else if (context.eventName === 'issues') {
-              const labels = issue.labels.map(l => l.name);
               if (action === 'opened' && !privateNumber) {
-                const { data: newPrivate } = await github.rest.issues.create({
+                // Public에서 생생된 이슈를 Private으로 전송
+                await github.rest.issues.create({
                   ...target,
                   title: `[Public] ${issue.title}`,
-                  body: `${issue.body ?? ''}\n\n\n`,
-                  labels
+                  body: (issue.body || '') + `\n\n`,
+                  labels: issue.labels.map(l => l.name)
                 });
-                // Public 본문에 Private ID 기록
-                await github.rest.issues.update({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issue.number,
-                  body: `${issue.body ?? ''}\n\n`
-                });
+                // 여기서 Public 본문을 update하지 않음! (연쇄 반응 차단 방지)
               } else if (privateNumber) {
                 await github.rest.issues.update({
-                  ...target,
-                  issue_number: privateNumber,
+                  ...target, issue_number: privateNumber,
                   title: `[Public] ${issue.title.replace(/^\[Public\]\s*/, '')}`,
-                  state: issue.state,
-                  labels
+                  state: issue.state, labels: issue.labels.map(l => l.name)
                 });
               }
             }
