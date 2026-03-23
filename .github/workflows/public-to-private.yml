@@ -15,18 +15,11 @@ jobs:
             const { action, issue, comment } = context.payload;
             const repoOpts = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [루프 차단 핵심] 봇(system)이 작성한 댓글은 절대 동기화하지 않음!
-            if (comment && comment.user.type === 'Bot') {
-              console.log("봇이 작성한 댓글이므로 무시합니다.");
-              return;
-            }
+            // [절대 규칙] 작성자가 Bot이면 즉시 종료 (무한 루프 방지)
+            if (comment && comment.user.type === 'Bot') return;
 
-            // [댓글 동기화] 일반 사용자가 퍼블릭에 쓴 댓글만 프라이빗으로 복사
-            if (context.eventName === 'issue_comment') {
-              console.log("사용자 댓글을 프라이빗으로 복사합니다.");
-              await github.rest.issues.createComment({
-                ...repoOpts,
-                issue_number: issue.number,
-                body: `**[Public] ${comment.user.login}:**\n\n${comment.body}`
-              });
-            }
+            await github.rest.issues.createComment({
+              ...repoOpts,
+              issue_number: issue.number,
+              body: `**[Public] ${comment.user.login}:**\n\n${comment.body}`
+            });
