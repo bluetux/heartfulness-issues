@@ -15,52 +15,54 @@ jobs:
           github-token: ${{ secrets.ISSUE_SYNC }}
           script: |
             const { action, issue, comment, sender } = context.payload;
-            const targetRepo = { owner: 'bluetux', repo: 'heartfulness' };
+            const target = { owner: 'bluetux', repo: 'heartfulness' };
 
+            // [방어막 1] 봇이거나, 본문에 Private에서 넘어온 마커가 있으면 절대 실행 안 함
             if (sender.type === 'Bot') return;
-            if (comment && comment.body.includes('> **[Manager]**')) return;
+            if (issue.body && issue.body.includes('')) return;
+            
+            // [방어막 2] 동기화 댓글 차단
+            const isSyncComment = comment && (
+              comment.body.includes('[Manager]') || 
+              comment.body.includes('[Public]') || 
+              comment.body.includes('')
+            );
+            if (isSyncComment) return;
 
-            // [1] 마커로 연결된 Private 이슈 번호 추출
-            const match = (issue.body ?? '').match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
-            
-            // [2] 댓글 동기화 (연결된 이슈가 있을 때만)
+            const match = (issue.body ?? '').match(/from-private: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
+
             if (context.eventName === 'issue_comment' && match) {
-              const privateNum = parseInt(match[1], 10);
               await github.rest.issues.createComment({
-                ...targetRepo,
-                issue_number: privateNum,
-                body: `> **[Public]** _@${sender.login}_\n\n${comment.body}`
+                ...target,
+                issue_number: parseInt(match[1], 10),
+                body: `**[Public]** _@${sender.login}_:\n\n${comment.body}\n\n`
               });
-            } 
-            
-            // [3] 이슈 본체 동기화
-            else if (context.eventName === 'issues') {
-              const labels = issue.labels ? issue.labels.map(l => l.name) : [];
+            } else if (context.eventName === 'issues') {
+              const labels = issue.labels.map(l => l.name);
               
               if (action === 'opened' && !match) {
-                // Public에서 새로 생성된 이슈 -> Private에 새로 생성
+                // Public 신규 이슈 -> Private에 생성
                 const { data: newPrivate } = await github.rest.issues.create({
-                  ...targetRepo,
+                  ...target,
                   title: `[Public] ${issue.title}`,
                   body: `${issue.body ?? ''}\n\n`,
                   labels
                 });
 
-                // 생성 후 Public 이슈 본문에 Private 마커를 박아서 연결 (중요!)
-                const newMarker = ``;
+                // 생성 직후 Public 이슈 본문에 Private 주소 마커 삽입 (이 업데이트는 위 방어막에서 걸러짐)
                 await github.rest.issues.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `${issue.body ?? ''}\n\n${newMarker}`
+                  body: `${issue.body ?? ''}\n\n`
                 });
               } else if (match) {
-                // 이미 연결된 이슈면 상태 업데이트
-                const privateNum = parseInt(match[1], 10);
+                // 기존 이슈 업데이트 (제목에서 [Public] 중복 방지)
+                const cleanTitle = issue.title.replace(/^\[Public\]\s*/, '');
                 await github.rest.issues.update({
-                  ...targetRepo,
-                  issue_number: privateNum,
-                  title: issue.title,
+                  ...target,
+                  issue_number: parseInt(match[1], 10),
+                  title: `[Public] ${cleanTitle}`,
                   state: issue.state,
                   labels
                 });
