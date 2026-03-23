@@ -1,63 +1,45 @@
-name: Private to Public Sync
+name: Public to Private Sync
 on:
-  issues:
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
   issue_comment:
     types: [created]
+  issues:
+    types: [closed, reopened]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Sync to Public
+      - name: Sync to Private
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.ISSUE_SYNC }}
           script: |
-            const { action, issue, comment, sender } = context.payload;
-            const target = { owner: 'bluetux', repo: 'heartfulness-issues' };
-            const marker = ``;
+            const { issue, comment, sender } = context.payload;
+            const target = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // 1. 루프 차단: 봇이거나, 내가 보낸 [Public] 댓글이면 무시
+            // 1. 루프 차단: 봇이거나, 내가 보낸 [Manager] 댓글이면 무시
             if (sender.type === 'Bot') return;
-            if (comment && comment.body.includes('> **[Public]**')) return;
+            if (comment && comment.body.includes('> **[Manager]**')) return;
 
-            // 2. 검색 로직 (인덱싱 지연 대비 2회 시도)
-            async function findPublicIssue() {
-              const q = `repo:${target.owner}/${target.repo} type:issue "${issue.html_url}" in:body`;
-              const { data: results } = await github.rest.search.issuesAndPullRequests({ q });
-              return results.total_count > 0 ? results.items[0] : null;
-            }
+            // 2. 원본 번호 추출 (정규식 강화: 공백/포맷 유연성)
+            const match = (issue.body ?? '').match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
+            if (!match) return console.log('Non-synced issue, skip.');
+            
+            const privateNumber = parseInt(match[1], 10);
 
-            let publicIssue = (action !== 'opened') ? await findPublicIssue() : null;
-
-            // 3. 케이스별 동기화
-            const labels = issue.labels ? issue.labels.map(l => l.name) : [];
-            const syncedBody = `${issue.body ?? ''}\n\n${marker}`;
-
+            // 3. 댓글 동기화
             if (context.eventName === 'issue_comment') {
-              if (!publicIssue) return console.log('Matching issue not indexed yet.');
               await github.rest.issues.createComment({
                 ...target,
-                issue_number: publicIssue.number,
-                body: `> **[Manager]** _(${sender.login})_\n\n${comment.body}`
+                issue_number: privateNumber,
+                body: `> **[Public]** _@${sender.login}_\n\n${comment.body}`
               });
-            } else if (context.eventName === 'issues') {
-              if (action === 'opened') {
-                await github.rest.issues.create({
-                  ...target,
-                  title: issue.title,
-                  body: syncedBody,
-                  labels
-                });
-              } else if (publicIssue) {
-                await github.rest.issues.update({
-                  ...target,
-                  issue_number: publicIssue.number,
-                  title: issue.title,
-                  body: syncedBody,
-                  state: issue.state,
-                  labels
-                });
-              }
+            } 
+            // 4. 상태 동기화
+            else if (context.eventName === 'issues') {
+              await github.rest.issues.update({
+                ...target,
+                issue_number: privateNumber,
+                state: issue.state
+              });
             }
