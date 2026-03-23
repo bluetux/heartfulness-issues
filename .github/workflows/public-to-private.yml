@@ -1,6 +1,8 @@
 name: Public to Private Sync
+
 on:
   issues:
+    # 모든 액션을 감시해서 Private과 싱크를 맞춰야 함
     types: [opened, edited, closed, reopened, labeled, unlabeled]
   issue_comment:
     types: [created]
@@ -17,30 +19,52 @@ jobs:
             const { action, issue, comment, sender } = context.payload;
             const target = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [1] 루프 차단: 봇이거나, 동기화된 댓글([Manager])이면 즉시 종료
+            // [1] 루프 차단: 봇이거나 관리자가 보낸 [Manager] 댓글은 무시
             if (sender.type === 'Bot') return;
             if (comment && comment.body.includes('> **[Manager]**')) return;
 
-            // [2] 마커 확인 및 Private 번호 추출
-            const match = (issue.body ?? '').match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
-            if (!match) return console.log('동기화 대상이 아닙니다.');
-            
-            const privateNumber = parseInt(match[1], 10);
+            // [2] 동기화 대상 판별 (가장 중요)
+            const bodyText = issue.body || '';
+            const match = bodyText.match(/private-origin: https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/);
 
-            // [3] 실행 분기
+            if (!match) {
+              console.log('이 이슈는 마커가 없는 Public 전용 이슈입니다. 동기화를 하지 않습니다.');
+              // 만약 Public 전용 이슈도 보고받고 싶다면 여기에 별도 로직이 필요해.
+              return;
+            }
+
+            const privateIssueNumber = parseInt(match[1], 10);
+            console.log(`매칭된 Private 이슈 번호 발견: #${privateIssueNumber}`);
+
+            // [3] 댓글 동기화
             if (context.eventName === 'issue_comment') {
-              await github.rest.issues.createComment({
-                ...target,
-                issue_number: privateNumber,
-                body: `> **[Public]** _@${sender.login}_\n\n${comment.body}`
-              });
-            } else if (context.eventName === 'issues') {
-              // Public에서 사용자가 수정한 상태/라벨을 Private에 반영
-              const labels = issue.labels ? issue.labels.map(l => l.name) : [];
-              await github.rest.issues.update({
-                ...target,
-                issue_number: privateNumber,
-                state: issue.state,
-                labels: labels
-              });
+              try {
+                await github.rest.issues.createComment({
+                  ...target,
+                  issue_number: privateIssueNumber,
+                  body: `> **[Public User]** _@${sender.login}_\n\n${comment.body}`
+                });
+                console.log('댓글 동기화 성공');
+              } catch (e) {
+                console.error('댓글 동기화 실패:', e.message);
+              }
+            } 
+            
+            // [4] 이슈 본체 및 상태 동기화 (Edited, Closed, Reopened, Labeled 등)
+            else if (context.eventName === 'issues') {
+              try {
+                const labels = issue.labels ? issue.labels.map(l => l.name) : [];
+                
+                // Public에서 유저가 수정한 내용을 Private에 업데이트
+                await github.rest.issues.update({
+                  ...target,
+                  issue_number: privateIssueNumber,
+                  title: issue.title,    // 유저가 제목을 바꿨을 때 싱크
+                  state: issue.state,    // 유저가 이슈를 닫거나 열었을 때 싱크
+                  labels: labels         // 유저가 라벨을 조작했을 때 싱크
+                });
+                console.log(`Private #${privateIssueNumber} 상태/라벨/제목 동기화 완료 (Action: ${action})`);
+              } catch (e) {
+                console.error('이슈 상태 업데이트 실패:', e.message);
+              }
             }
