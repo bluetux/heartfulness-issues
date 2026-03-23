@@ -17,11 +17,12 @@ jobs:
             const { action, issue, comment, sender } = context.payload;
             const target = { owner: 'bluetux', repo: 'heartfulness' };
 
-            // [차단] 봇이거나 Private에서 온 마커면 종료
+            // 봇이거나 이미 동기화 마커가 있으면 종료 (무한 루프 방어)
             if (sender.type === 'Bot' || (issue.body && issue.body.includes(''))) return;
             if (comment && comment.body.includes('')) return;
 
-            const match = (issue.body || '').match(/private-id: (\d+)/);
+            // 본문에서 연결된 이슈 ID 추출
+            const match = (issue.body || '').match(/private-id: #(\d+)/);
             const privateNumber = match ? parseInt(match[1], 10) : null;
 
             if (context.eventName === 'issue_comment' && privateNumber) {
@@ -31,21 +32,22 @@ jobs:
                 body: `${comment.body}\n\n\n> **[Public]** _@${sender.login}_`
               });
             } else if (context.eventName === 'issues') {
-              const labels = issue.labels.map(l => l.name);
-
               if (action === 'opened' && !privateNumber) {
+                // 1. Private에 생성
                 const { data: newPrivate } = await github.rest.issues.create({
                   ...target,
                   title: `[Public] ${issue.title}`,
                   body: `${issue.body ?? ''}\n\n\n`,
-                  labels
+                  labels: issue.labels.map(l => l.name)
                 });
-                // Public 본문에 Private 번호 기록
+                
+                // 2. Public 본문에 연결 고리 업데이트
+                // (이 업데이트가 연쇄 반응을 일으키려면 ISSUE_SYNC가 강력한 PAT여야 해!)
                 await github.rest.issues.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `${issue.body ?? ''}\n`
+                  body: `${issue.body ?? ''}\n\n\n`
                 });
               } else if (privateNumber) {
                 await github.rest.issues.update({
@@ -53,7 +55,7 @@ jobs:
                   issue_number: privateNumber,
                   title: `[Public] ${issue.title.replace(/^\[Public\]\s*/, '')}`,
                   state: issue.state,
-                  labels
+                  labels: issue.labels.map(l => l.name)
                 });
               }
             }
