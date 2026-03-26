@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `v1.0 beta` | 2026-03-26 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v1.0-beta/app-release.apk) |
 | `v5.6 (2026-03-26 11:36)` | 2026-03-26 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v5.6-2026-03-26-11-36/app-release.apk) |
 
 
