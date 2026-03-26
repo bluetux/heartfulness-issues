@@ -7,7 +7,7 @@
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
 | `v 0.1. beta (2026-03-26 16:52)` | 2026-03-26 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v-0.1.-beta-2026-03-26-16-52/heartfulness-v-0.1.-beta-2026-03-26-16-52.apk) |
-| `v1.0 beta (2026-03-26 12:07)` | 2026-03-26 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v1.0-beta-2026-03-26-12-07/heartfulness-v1.0-beta-2026-03-26-12-07.apk) |
+
 
 
 [안드로드폰 용 APK 설치 방법 ](https://github.com/bluetux/heartfulness-issues/blob/main/install.md)
