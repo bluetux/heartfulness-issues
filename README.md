@@ -9,5 +9,6 @@
 | `v1.0 beta (2026-03-26 12:07)` | 2026-03-26 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v1.0-beta-2026-03-26-12-07/heartfulness-v1.0-beta-2026-03-26-12-07.apk) |
 
 
+[htt](https://github.com/bluetux/heartfulness-issues/blob/main/install.md)
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/bd63d896-4a82-4500-a607-573aecfa0366" />
