@@ -7,7 +7,6 @@
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
 | `0.2.1+5 (2026-04-02 00:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.1+5-2026-04-02-00-48/heartfulness-0.2.1+5-2026-04-02-00-48.apk) |
-| `0.2.1+5 (2026-04-01 23:07)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.1+5-2026-04-01-23-07/heartfulness-0.2.1+5-2026-04-01-23-07.apk) |
 | `0.2.1 (2026-04-01 22:49)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.1-2026-04-01-22-49/heartfulness-v0.2.1-2026-04-01-22-49.apk) |
 | `0.2.0 (2026-04-01 11:38)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.0-2026-04-01-11-38/heartfulness-v0.2.0-2026-04-01-11-38.apk) |
 | `0.1.7 (2026-04-01 01:56)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.1.7-2026-04-01-01-56/heartfulness-v0.1.7-2026-04-01-01-56.apk) |
@@ -22,8 +21,6 @@
 
 ### 0.2.1+5 (2026-04-02 00:48) (2026-04-02)
 - 홈 메인 이미지 크기수정 기능 추가.
-
-### 0.2.1+5 (2026-04-01 23:07) (2026-04-01)
 - 버전명 관리를 위해 v 를 삭제함.
 
 ### 0.2.1 (2026-04-01 22:49) (2026-04-01)
