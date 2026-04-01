@@ -7,13 +7,20 @@
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
 | `v0.2.1 (2026-04-01 22:49)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.1-2026-04-01-22-49/heartfulness-v0.2.1-2026-04-01-22-49.apk) |
-| `v0.2.1 (2026-04-01 22:46)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.1-2026-04-01-22-46/heartfulness-v0.2.1-2026-04-01-22-46.apk) |
 | `v0.2.0 (2026-04-01 11:38)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.0-2026-04-01-11-38/heartfulness-v0.2.0-2026-04-01-11-38.apk) |
 | `v0.1.7 (2026-04-01 01:56)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.1.7-2026-04-01-01-56/heartfulness-v0.1.7-2026-04-01-01-56.apk) |
 
 
 
 [안드로드폰 용 APK 설치 방법 ](https://github.com/bluetux/heartfulness-issues/blob/main/install.md)
+
+
+
+## 변경 로그
+
+### v0.2.1 (2026-04-01 22:49) (2026-04-01)
+- 이전 이미지를 삭제해 DB 스토리지 사용율을 줄일수 있도록 변경
+- 프로필이미지 변경시 기존 프로필이미지 삭제하도록 변경
 
 ## 버전 0.2.0
 - 기본 개발을 대부분 완료었습니다. 버전을 0.2 로 올립니다.
@@ -26,11 +33,3 @@
 ## 로드맵
 - 1.0 rc 기존 버그들이 모드 해결된 버전
 - 1.0 release 정식 릴리즈 및 앱스토어 등록
-
-  
-
-## 변경 로그
-
-### v0.2.1 (2026-04-01 22:49) (2026-04-01)
-- 이전 이미지를 삭제해 DB 스토리지 사용율을 줄일수 있도록 변경
-- 프로필이미지 변경시 기존 프로필이미지 삭제하도록 변경
