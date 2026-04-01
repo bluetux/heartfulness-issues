@@ -13,4 +13,4 @@
 
 [안드로드폰 용 APK 설치 방법 ](https://github.com/bluetux/heartfulness-issues/blob/main/install.md)
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/bd63d896-4a82-4500-a607-573aecfa0366" />
+기본 개발을 대부분 완료었습니다. 버전을 0.2 로 올립니다.
