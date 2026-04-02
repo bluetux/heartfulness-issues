@@ -39,7 +39,7 @@
 
 ### 3. 로그인 정보 (테스트 계정은)
 
-- **테스트 계정:** `dummy1@gmail.com` ~ `dummy20@gmail.com`
+- **테스트 계정:** `dummy1@gmail.com` ~ `dummy2@gmail.com`
 - **비밀번호:** `qazzxc`
 - *기존에 쓰던 계정이 있다면 그대로 사용 가능합니다.*
 
