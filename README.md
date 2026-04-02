@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.3.10` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.10/heartfulness-0.3.10.apk) |
 | `0.3.8` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.8/heartfulness-0.3.8.apk) |
 | `0.3.7` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.7/heartfulness-0.3.7.apk) |
 | `0.3.6` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.6/heartfulness-0.3.6.apk) |
@@ -20,6 +21,9 @@
 
 
 ## 변경 로그
+
+### 0.3.10 (2026-04-03)
+- 직접수정할수 있는 로직을 추가하였습니다. 수정안되는곳이 있는지 재확인 바랍니다.
 
 ### 0.3.8 (2026-04-02)
 - 타이틀 로딩시 캐시활용으로 더 빠르게 로딩되게 수정
