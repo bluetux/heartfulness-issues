@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.2.3 (2026-04-02 10:54)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.3-2026-04-02-10-54/heartfulness-0.2.3-2026-04-02-10-54.apk) |
 | `0.2.2 (2026-04-02 02:35)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.2-2026-04-02-02-35/heartfulness-0.2.2-2026-04-02-02-35.apk) |
 | `0.2.1+5 (2026-04-02 00:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.1+5-2026-04-02-00-48/heartfulness-0.2.1+5-2026-04-02-00-48.apk) |
 | `0.2.1 (2026-04-01 22:49)` | 2026-04-01 | [📱 APK 다운로드](https://github.com/bluetux/heartfulness-issues/releases/download/v0.2.1-2026-04-01-22-49/heartfulness-v0.2.1-2026-04-01-22-49.apk) |
@@ -19,6 +20,9 @@
 
 
 ## 변경 로그
+
+### 0.2.3 (2026-04-02 10:54) (2026-04-02)
+- 마이너 버그 fix
 
 ### 0.2.2 (2026-04-02 02:35) (2026-04-02)
 - supabase 보안강화 
