@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.3.7` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.7/heartfulness-0.3.7.apk) |
 | `0.3.6` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.6/heartfulness-0.3.6.apk) |
 | `0.3.4` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.4/heartfulness-0.3.4.apk) |
 | `0.3.2` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.2/heartfulness-0.3.2.apk) |
@@ -18,6 +19,9 @@
 
 
 ## 변경 로그
+
+### 0.3.7 (2026-04-02)
+- 보안 이력을 위해 기능을 추가합니다.
 
 ### 0.3.6 (2026-04-02)
 - #76 버튼명 수정기능 추가
