@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.3.2` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.2/heartfulness-0.3.2.apk) |
 | `0.3.1 (2026-04-02 15:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.1-2026-04-02-15-48/heartfulness-0.3.1-2026-04-02-15-48.apk) |
 | `0.3.1 (2026-04-02 15:36)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.1-2026-04-02-15-36/heartfulness-0.3.1-2026-04-02-15-36.apk) |
 | `0.3.0 (2026-04-02 15:33)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.0-2026-04-02-15-33/heartfulness-0.3.0-2026-04-02-15-33.apk) |
@@ -23,6 +24,9 @@
 
 
 ## 변경 로그
+
+### 0.3.2 (2026-04-02)
+- 생일 확인버튼 레이아웃 개선
 
 ### 0.3.1 (2026-04-02 15:36) (2026-04-02)
 - 생일 선택 버텀시트 확인버튼 변경
