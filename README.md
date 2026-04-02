@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.3.0 (2026-04-02 15:33)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.0-2026-04-02-15-33/heartfulness-0.3.0-2026-04-02-15-33.apk) |
 | `0.2.3 (2026-04-02 10:54)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.3-2026-04-02-10-54/heartfulness-0.2.3-2026-04-02-10-54.apk) |
 | `0.2.2 (2026-04-02 02:35)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.2-2026-04-02-02-35/heartfulness-0.2.2-2026-04-02-02-35.apk) |
 | `0.2.1+5 (2026-04-02 00:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.2.1+5-2026-04-02-00-48/heartfulness-0.2.1+5-2026-04-02-00-48.apk) |
@@ -20,6 +21,10 @@
 
 
 ## 변경 로그
+
+### 0.3.0 (2026-04-02 15:33) (2026-04-02)
+- 정보통신법에 따르는 암호화 강도 검증 체계 구동
+- 온보딩시 생일 버텀시트 에라 수정
 
 ### 0.2.3 (2026-04-02 10:54) (2026-04-02)
 - 마이너 버그 fix
