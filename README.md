@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.6.1` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.1/heartfulness-0.6.1.apk) |
 | `0.6.0` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.0/heartfulness-0.6.0.apk) |
 | `0.5.0` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.5.0/heartfulness-0.5.0.apk) |
 | `0.4.4` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.4/heartfulness-0.4.4.apk) |
@@ -26,6 +27,9 @@
 
 
 ## 변경 로그
+
+### 0.6.1 (2026-04-04)
+- keepalive 버그 개선
 
 ### 0.6.0 (2026-04-04)
   - 관리자 아바타 토글 컴포넌트
