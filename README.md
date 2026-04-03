@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.6.0` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.0/heartfulness-0.6.0.apk) |
 | `0.5.0` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.5.0/heartfulness-0.5.0.apk) |
 | `0.4.4` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.4/heartfulness-0.4.4.apk) |
 | `0.4.2` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.2/heartfulness-0.4.2.apk) |
@@ -25,6 +26,14 @@
 
 
 ## 변경 로그
+
+### 0.6.0 (2026-04-04)
+  - 관리자 아바타 토글 컴포넌트
+  - 로그인 금지 기능
+  - 시팅 세션 전반 안정화 (중복 방지, 좀비 감지, heartbeat, 자동 락, 세션 복귀)
+  - 시스템 설정 (최대 인원, 트레이너 대기 시간)
+  - 명상 요약 페이지 + 파이차트
+  - 각종 UI/UX 개선
 
 ### 0.5.0 (2026-04-03)
 - 관리자 인경우 우측상단 관리자 메뉴가 항상 활성화되어 있어.. 일반 유저일때와 레이아웃 차이가 커서.. 아바타를 클릭하면 관리자 메뉴가 활성화되고.. 그기서 수정 관리자 메뉴, 아바타를 클릭하면 이동할수있게 구성을 바꿈. 관리자 메뉴들 펼쳐지 상태에서는 어떤것을 선택하거다 다른 페이지로 이동하면 메뉴가 자동으로 바뀜. 기타 다른 영역의  페이지 수정을 위한 나무잎수정 메뉴는 항상 보이는 상태를 유지함..
