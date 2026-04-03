@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 |
 |------|------|---------|
+| `0.4.4` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.4/heartfulness-0.4.4.apk) |
 | `0.4.2` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.2/heartfulness-0.4.2.apk) |
 | `0.4.1` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.1/heartfulness-0.4.1.apk) |
 | `0.3.10` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.10/heartfulness-0.3.10.apk) |
@@ -23,6 +24,9 @@
 
 
 ## 변경 로그
+
+### 0.4.4 (2026-04-03)
+- 약관, 개인정보 처리방침 분리 및 위치 이동 
 
 ### 0.4.2 (2026-04-03)
 - 앱등록을 위해서 회원탈퇴 기능이 필요하여 추가함.
