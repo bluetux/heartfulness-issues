@@ -4,23 +4,23 @@
 
 
 ## 테스트 APK 다운로드
-| 버전 | 날짜 | 다운로드 |
-|------|------|---------|
-| `0.6.3` | 2026-04-05 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.3/heartfulness-0.6.3.apk) |
-| `0.6.2` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.2/heartfulness-0.6.2.apk) |
-| `0.6.1` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.1/heartfulness-0.6.1.apk) |
-| `0.6.0` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.0/heartfulness-0.6.0.apk) |
-| `0.5.0` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.5.0/heartfulness-0.5.0.apk) |
-| `0.4.4` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.4/heartfulness-0.4.4.apk) |
-| `0.4.2` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.2/heartfulness-0.4.2.apk) |
-| `0.4.1` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.1/heartfulness-0.4.1.apk) |
-| `0.3.10` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.10/heartfulness-0.3.10.apk) |
-| `0.3.8` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.8/heartfulness-0.3.8.apk) |
-| `0.3.7` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.7/heartfulness-0.3.7.apk) |
-| `0.3.6` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.6/heartfulness-0.3.6.apk) |
-| `0.3.4` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.4/heartfulness-0.3.4.apk) |
-| `0.3.2` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.2/heartfulness-0.3.2.apk) |
-| `0.3.1 (2026-04-02 15:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.1-2026-04-02-15-48/heartfulness-0.3.1-2026-04-02-15-48.apk) |
+| 버전 | 날짜 | 다운로드 | 횟수 |
+|------|------|---------|------|
+| `0.6.3` | 2026-04-05 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.3/heartfulness-0.6.3.apk) | 0회 |
+| `0.6.2` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.2/heartfulness-0.6.2.apk) | 3회 |
+| `0.6.1` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.1/heartfulness-0.6.1.apk) | 0회 |
+| `0.6.0` | 2026-04-04 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.0/heartfulness-0.6.0.apk) | 0회 |
+| `0.5.0` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.5.0/heartfulness-0.5.0.apk) | 0회 |
+| `0.4.4` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.4/heartfulness-0.4.4.apk) | 0회 |
+| `0.4.2` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.2/heartfulness-0.4.2.apk) | 3회 |
+| `0.4.1` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.4.1/heartfulness-0.4.1.apk) | 3회 |
+| `0.3.10` | 2026-04-03 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.10/heartfulness-0.3.10.apk) | 5회 |
+| `0.3.8` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.8/heartfulness-0.3.8.apk) | 6회 |
+| `0.3.7` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.7/heartfulness-0.3.7.apk) | 3회 |
+| `0.3.6` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.6/heartfulness-0.3.6.apk) | 3회 |
+| `0.3.4` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.4/heartfulness-0.3.4.apk) | 3회 |
+| `0.3.2` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.2/heartfulness-0.3.2.apk) | 0회 |
+| `0.3.1 (2026-04-02 15:48)` | 2026-04-02 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.3.1-2026-04-02-15-48/heartfulness-0.3.1-2026-04-02-15-48.apk) | 2회 |
 
 
 
