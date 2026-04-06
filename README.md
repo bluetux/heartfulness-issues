@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.7.0 (2026-04-06 11:08)` | 2026-04-06 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.0-2026-04-06-11-08/heartfulness-0.7.0-2026-04-06-11-08.apk) | 0회 |
 | `0.7.0 (2026-04-06 11:03)` | 2026-04-06 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.0-2026-04-06-11-03/heartfulness-0.7.0-2026-04-06-11-03.apk) | 0회 |
 | `0.6.4` | 2026-04-05 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.4/heartfulness-0.6.4.apk) | 1회 |
 | `0.6.3` | 2026-04-05 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.6.3/heartfulness-0.6.3.apk) | 1회 |
@@ -31,6 +32,11 @@
 
 
 ## 변경 로그
+
+### 0.7.0 (2026-04-06 11:08) (2026-04-06)
+- 보안관련 대규모 업그레이드, 보안취약성을 개선함.
+- DB 사용관련 보안위험 제거
+- 이전버전과 호환성이 떨어지므로 반듯이 최신버전을 사용하네요.
 
 ### 0.6.4 (2026-04-05)
 - 함께 참여하는 인원 표시 개선
