@@ -6,7 +6,8 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.7.5 (2026-04-07 10:34)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.5-2026-04-07-10-34/heartfulness-0.7.5-2026-04-07-10-34.apk) | 0회 |
+| `0.7.6 (2026-04-07 11:18)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.6-2026-04-07-11-18/heartfulness-0.7.6-2026-04-07-11-18.apk) | 0회 |
+| `0.7.5 (2026-04-07 10:34)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.5-2026-04-07-10-34/heartfulness-0.7.5-2026-04-07-10-34.apk) | 1회 |
 | `0.7.4 (2026-04-06 20:06)` | 2026-04-06 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.4-2026-04-06-20-06/heartfulness-0.7.4-2026-04-06-20-06.apk) | 1회 |
 | `0.7.3 (2026-04-06 20:03)` | 2026-04-06 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.3-2026-04-06-20-03/heartfulness-0.7.3-2026-04-06-20-03.apk) | 1회 |
 | `0.7.2 (2026-04-06 18:08)` | 2026-04-06 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.2-2026-04-06-18-08/heartfulness-0.7.2-2026-04-06-18-08.apk) | 0회 |
@@ -36,6 +37,11 @@
 
 
 ## 변경 로그
+
+### 0.7.6 (2026-04-07 11:18) (2026-04-07)
+- 시팅종료후 이동 페이지 변경
+- 시팅시청 종료시 이중으로 컨펌메세지 나오는 문제 해결
+- 영적없는 프리셉트가 있을때 시팅결과 화면 수정
 
 ### 0.7.5 (2026-04-07 10:34) (2026-04-07)
 - - 영작이름 수정시 힌트메세지 남아 있는 버그 수정
