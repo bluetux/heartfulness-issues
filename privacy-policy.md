@@ -25,12 +25,11 @@
 
 ## 6. 이용자의 권리
 - 개인정보 조회·수정·삭제를 앱 내 설정 또는 이메일로 요청할 수 있습니다.
-- 문의: heartfulness.korea@gmail.com
+- 문의: heartfulnesskorea@naver.com
 
 ## 7. 개인정보 보호책임자
-- 단체명: 사단법인 하트풀니스 협회
-- 이메일: heartfulness.korea@gmail.com
-
+- 단체명: 사단법인 한국하트풀니스명상협회
+- 이메일: heartfulnesskorea@naver.com
 ---
 
 **시행일**: 2026년 4월 2일
