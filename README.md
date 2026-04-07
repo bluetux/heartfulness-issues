@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.7.10 (2026-04-07 18:33)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.10-2026-04-07-18-33/heartfulness-0.7.10-2026-04-07-18-33.apk) | 0회 |
 | `0.7.9 (2026-04-07 18:06)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.9-2026-04-07-18-06/heartfulness-0.7.9-2026-04-07-18-06.apk) | 0회 |
 | `0.7.8 (2026-04-07 17:57)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.8-2026-04-07-17-57/heartfulness-0.7.8-2026-04-07-17-57.apk) | 0회 |
 | `0.7.7 (2026-04-07 16:24)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.7-2026-04-07-16-24/heartfulness-0.7.7-2026-04-07-16-24.apk) | 0회 |
@@ -24,6 +25,9 @@
 
 
 ## 변경 로그
+
+### 0.7.10 (2026-04-07 18:33) (2026-04-07)
+- - 세션연결 로직 강화
 
 ### 0.7.9 (2026-04-07 18:06) (2026-04-07)
 - - 네트워크 체크 로직 개선
