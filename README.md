@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.7.17 (2026-04-08 11:39)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.17-2026-04-08-11-39/heartfulness-0.7.17-2026-04-08-11-39.apk) | 0회 |
 | `0.7.16 (2026-04-08 11:34)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.16-2026-04-08-11-34/heartfulness-0.7.16-2026-04-08-11-34.apk) | 0회 |
 | `0.7.15 (2026-04-08 11:11)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.15-2026-04-08-11-11/heartfulness-0.7.15-2026-04-08-11-11.apk) | 1회 |
 | `0.7.14 (2026-04-08 02:57)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.14-2026-04-08-02-57/heartfulness-0.7.14-2026-04-08-02-57.apk) | 1회 |
@@ -31,6 +32,9 @@
 
 
 ## 변경 로그
+
+### 0.7.17 (2026-04-08 11:39) (2026-04-08)
+- - 성별 수정 부분 개선 
 
 ### 0.7.16 (2026-04-08 11:34) (2026-04-08)
 - #111 done
