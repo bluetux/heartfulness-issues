@@ -6,9 +6,10 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.7.15 (2026-04-08 11:11)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.15-2026-04-08-11-11/heartfulness-0.7.15-2026-04-08-11-11.apk) | 0회 |
+| `0.7.16 (2026-04-08 11:34)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.16-2026-04-08-11-34/heartfulness-0.7.16-2026-04-08-11-34.apk) | 0회 |
+| `0.7.15 (2026-04-08 11:11)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.15-2026-04-08-11-11/heartfulness-0.7.15-2026-04-08-11-11.apk) | 1회 |
 | `0.7.14 (2026-04-08 02:57)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.14-2026-04-08-02-57/heartfulness-0.7.14-2026-04-08-02-57.apk) | 1회 |
-| `0.7.13 (2026-04-08 02:44)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.13-2026-04-08-02-44/heartfulness-0.7.13-2026-04-08-02-44.apk) | 2회 |
+| `0.7.13 (2026-04-08 02:44)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.13-2026-04-08-02-44/heartfulness-0.7.13-2026-04-08-02-44.apk) | 3회 |
 | `0.7.12 (2026-04-07 23:01)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.12-2026-04-07-23-01/heartfulness-0.7.12-2026-04-07-23-01.apk) | 0회 |
 | `0.7.11 (2026-04-07 19:21)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.11-2026-04-07-19-21/heartfulness-0.7.11-2026-04-07-19-21.apk) | 0회 |
 | `0.7.10 (2026-04-07 18:33)` | 2026-04-07 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.10-2026-04-07-18-33/heartfulness-0.7.10-2026-04-07-18-33.apk) | 0회 |
@@ -30,6 +31,9 @@
 
 
 ## 변경 로그
+
+### 0.7.16 (2026-04-08 11:34) (2026-04-08)
+- #111 done
 
 ### 0.7.15 (2026-04-08 11:11) (2026-04-08)
 - #ᇂᇂᇂ112 버그 수정
