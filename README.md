@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.8.3 (2026-04-08 14:57)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.3-2026-04-08-14-57/heartfulness-0.8.3-2026-04-08-14-57.apk) | 0회 |
 | `0.8.2 (2026-04-08 14:24)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.2-2026-04-08-14-24/heartfulness-0.8.2-2026-04-08-14-24.apk) | 0회 |
 | `0.8.1 (2026-04-08 14:03)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.1-2026-04-08-14-03/heartfulness-0.8.1-2026-04-08-14-03.apk) | 1회 |
 | `0.7.17 (2026-04-08 11:39)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.17-2026-04-08-11-39/heartfulness-0.7.17-2026-04-08-11-39.apk) | 2회 |
@@ -34,6 +35,9 @@
 
 
 ## 변경 로그
+
+### 0.8.3 (2026-04-08 14:57) (2026-04-08)
+- - 도움및 지원 수정 페이지지 수정가능 옵션 추가.. 링크수정 가능하게함.
 
 ### 0.8.2 (2026-04-08 14:24) (2026-04-08)
 - - 어두어진 화면을 터치만으로 밝아지게 하는 기능 추가
