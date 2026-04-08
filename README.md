@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.8.1 (2026-04-08 14:03)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.1-2026-04-08-14-03/heartfulness-0.8.1-2026-04-08-14-03.apk) | 0회 |
 | `0.7.17 (2026-04-08 11:39)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.17-2026-04-08-11-39/heartfulness-0.7.17-2026-04-08-11-39.apk) | 2회 |
 | `0.7.16 (2026-04-08 11:34)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.16-2026-04-08-11-34/heartfulness-0.7.16-2026-04-08-11-34.apk) | 1회 |
 | `0.7.15 (2026-04-08 11:11)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.15-2026-04-08-11-11/heartfulness-0.7.15-2026-04-08-11-11.apk) | 2회 |
@@ -32,6 +33,9 @@
 
 
 ## 변경 로그
+
+### 0.8.1 (2026-04-08 14:03) (2026-04-08)
+- - 0.8 버전
 
 ### 0.8.0 (2026-04-08 13:57) (2026-04-08)
 - 디톡스 제목 , 부제목 수정 옵션 추가.
