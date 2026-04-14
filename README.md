@@ -12,12 +12,7 @@
 | `0.9.0 (2026-04-13 12:29)` | 2026-04-13 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.0-2026-04-13-12-29/heartfulness-0.9.0-2026-04-13-12-29.apk) | 0회 |
 | `0.8.3 (2026-04-08 14:57)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.3-2026-04-08-14-57/heartfulness-0.8.3-2026-04-08-14-57.apk) | 2회 |
 | `0.8.2 (2026-04-08 14:24)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.2-2026-04-08-14-24/heartfulness-0.8.2-2026-04-08-14-24.apk) | 1회 |
-| `0.8.1 (2026-04-08 14:03)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.8.1-2026-04-08-14-03/heartfulness-0.8.1-2026-04-08-14-03.apk) | 1회 |
-| `0.7.17 (2026-04-08 11:39)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.17-2026-04-08-11-39/heartfulness-0.7.17-2026-04-08-11-39.apk) | 2회 |
-| `0.7.16 (2026-04-08 11:34)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.16-2026-04-08-11-34/heartfulness-0.7.16-2026-04-08-11-34.apk) | 1회 |
-| `0.7.15 (2026-04-08 11:11)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.15-2026-04-08-11-11/heartfulness-0.7.15-2026-04-08-11-11.apk) | 2회 |
-| `0.7.14 (2026-04-08 02:57)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.14-2026-04-08-02-57/heartfulness-0.7.14-2026-04-08-02-57.apk) | 1회 |
-| `0.7.13 (2026-04-08 02:44)` | 2026-04-08 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.7.13-2026-04-08-02-44/heartfulness-0.7.13-2026-04-08-02-44.apk) | 3회 |
+
 
 
 
