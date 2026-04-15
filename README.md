@@ -6,7 +6,8 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.9.4 (2026-04-15 13:38)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.4-2026-04-15-13-38/heartfulness-0.9.4-2026-04-15-13-38.apk) | 0회 |
+| `0.9.5 (2026-04-15 14:20)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.5-2026-04-15-14-20/heartfulness-0.9.5-2026-04-15-14-20.apk) | 0회 |
+| `0.9.4 (2026-04-15 13:38)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.4-2026-04-15-13-38/heartfulness-0.9.4-2026-04-15-13-38.apk) | 1회 |
 | `0.9.3 (2026-04-14 11:39)` | 2026-04-14 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.3-2026-04-14-11-39/heartfulness-0.9.3-2026-04-14-11-39.apk) | 2회 |
 | `0.9.2 (2026-04-14 11:24)` | 2026-04-14 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.2-2026-04-14-11-24/heartfulness-0.9.2-2026-04-14-11-24.apk) | 0회 |
 | `0.9.1 (2026-04-13 13:04)` | 2026-04-13 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.1-2026-04-13-13-04/heartfulness-0.9.1-2026-04-13-13-04.apk) | 1회 |
@@ -22,6 +23,9 @@
 
 
 ## 변경 로그
+
+### 0.9.5 (2026-04-15 14:20) (2026-04-15)
+- 회원등급 변화 인식을 좀더 쉽게 인식할수 있도록 보강
 
 ### 0.9.4 (2026-04-15 13:38) (2026-04-15)
 - #126 버그 수정
