@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.9.8 (2026-04-15 16:16)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.8-2026-04-15-16-16/heartfulness-0.9.8-2026-04-15-16-16.apk) | 0회 |
 | `0.9.7 (2026-04-15 15:31)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.7-2026-04-15-15-31/heartfulness-0.9.7-2026-04-15-15-31.apk) | 0회 |
 | `0.9.6 (2026-04-15 14:45)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.6-2026-04-15-14-45/heartfulness-0.9.6-2026-04-15-14-45.apk) | 1회 |
 | `0.9.5 (2026-04-15 14:20)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.5-2026-04-15-14-20/heartfulness-0.9.5-2026-04-15-14-20.apk) | 1회 |
@@ -25,6 +26,9 @@
 
 
 ## 변경 로그
+
+### 0.9.8 (2026-04-15 16:16) (2026-04-15)
+- layout update
 
 ### 0.9.7 (2026-04-15 15:31) (2026-04-15)
 - 타인존 버그 와 좀비 요청 처리 개선
