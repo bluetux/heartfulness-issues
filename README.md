@@ -6,7 +6,8 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.9.10 (2026-04-15 19:35)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.10-2026-04-15-19-35/heartfulness-0.9.10-2026-04-15-19-35.apk) | 0회 |
+| `0.10.0 (2026-04-16 03:31)` | 2026-04-16 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.0-2026-04-16-03-31/heartfulness-0.10.0-2026-04-16-03-31.apk) | 0회 |
+| `0.9.10 (2026-04-15 19:35)` | 2026-04-15 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.9.10-2026-04-15-19-35/heartfulness-0.9.10-2026-04-15-19-35.apk) | 2회 |
 
 
 
@@ -16,6 +17,9 @@
 
 
 ## 변경 로그
+
+### 0.10.0 (2026-04-16 03:31) (2026-04-16)
+- 메인이미지 최신설정 고정화
 
 ### 0.9.10 (2026-04-15 19:35) (2026-04-15)
 - #127 관련 기능 개선,
