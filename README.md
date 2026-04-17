@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.10.5 (2026-04-18 05:27)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.5-2026-04-18-05-27/heartfulness-0.10.5-2026-04-18-05-27.apk) | 0회 |
 | `0.10.4 (2026-04-18 03:21)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.4-2026-04-18-03-21/heartfulness-0.10.4-2026-04-18-03-21.apk) | 0회 |
 | `0.10.2 (2026-04-18 02:32)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.2-2026-04-18-02-32/heartfulness-0.10.2-2026-04-18-02-32.apk) | 0회 |
 | `0.10.1 (2026-04-16 04:04)` | 2026-04-16 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.1-2026-04-16-04-04/heartfulness-0.10.1-2026-04-16-04-04.apk) | 1회 |
@@ -20,6 +21,9 @@
 
 
 ## 변경 로그
+
+### 0.10.5 (2026-04-18 05:27) (2026-04-18)
+- 애플스토어 등록을 위한 apple sign 기능 추가
 
 ### 0.10.4 (2026-04-18 03:21) (2026-04-18)
 - 정리
