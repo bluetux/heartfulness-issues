@@ -6,7 +6,8 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.10.6 (2026-04-18 17:10)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.6-2026-04-18-17-10/heartfulness-0.10.6-2026-04-18-17-10.apk) | 0회 |
+| `0.10.7 (2026-04-22 20:25)` | 2026-04-22 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.7-2026-04-22-20-25/heartfulness-0.10.7-2026-04-22-20-25.apk) | 0회 |
+| `0.10.6 (2026-04-18 17:10)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.6-2026-04-18-17-10/heartfulness-0.10.6-2026-04-18-17-10.apk) | 3회 |
 | `0.10.5 (2026-04-18 05:27)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.5-2026-04-18-05-27/heartfulness-0.10.5-2026-04-18-05-27.apk) | 1회 |
 | `0.10.4 (2026-04-18 03:21)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.4-2026-04-18-03-21/heartfulness-0.10.4-2026-04-18-03-21.apk) | 0회 |
 | `0.10.2 (2026-04-18 02:32)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.2-2026-04-18-02-32/heartfulness-0.10.2-2026-04-18-02-32.apk) | 0회 |
@@ -22,6 +23,9 @@
 
 
 ## 변경 로그
+
+### 0.10.7 (2026-04-22 20:25) (2026-04-22)
+- 로고 아이폰 표준화를 위한 빌드
 
 ### 0.10.6 (2026-04-18 17:10) (2026-04-18)
 - 취소버튼 중복 버그 수정
