@@ -7,7 +7,6 @@
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
 
-| `0.10.6 (2026-04-18 17:10)` | 2026-04-18 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.6-2026-04-18-17-10/heartfulness-0.10.6-2026-04-18-17-10.apk) | 3회 |
 
 
 
