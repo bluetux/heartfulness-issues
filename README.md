@@ -6,7 +6,8 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
-| `0.10.8 (2026-04-22 23:16)` | 2026-04-22 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.8-2026-04-22-23-16/heartfulness-0.10.8-2026-04-22-23-16.apk) | 0회 |
+| `0.10.10 (2026-04-28 17:51)` | 2026-04-28 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.10-2026-04-28-17-51/heartfulness-0.10.10-2026-04-28-17-51.apk) | 0회 |
+| `0.10.8 (2026-04-22 23:16)` | 2026-04-22 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.8-2026-04-22-23-16/heartfulness-0.10.8-2026-04-22-23-16.apk) | 1회 |
 | `0.10.7 (2026-04-22 20:30)` | 2026-04-22 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.7-2026-04-22-20-30/heartfulness-0.10.7-2026-04-22-20-30.apk) | 0회 |
 
 
@@ -19,6 +20,9 @@
 
 
 ## 변경 로그
+
+### 0.10.10 (2026-04-28 17:51) (2026-04-28)
+- #140 이슈 수정
 
 ### 0.10.8 (2026-04-22 23:16) (2026-04-22)
 - 프리셉터 세션 종료 로직을 자연스럽게 개선
