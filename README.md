@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.10.12 (2026-04-29 00:26)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.12-2026-04-29-00-26/heartfulness-0.10.12-2026-04-29-00-26.apk) | 0회 |
 | `0.10.11 (2026-04-28 23:58)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.11-2026-04-28-23-58/heartfulness-0.10.11-2026-04-28-23-58.apk) | 0회 |
 | `0.10.10 (2026-04-28 17:51)` | 2026-04-28 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.10-2026-04-28-17-51/heartfulness-0.10.10-2026-04-28-17-51.apk) | 0회 |
 | `0.10.8 (2026-04-22 23:16)` | 2026-04-22 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.8-2026-04-22-23-16/heartfulness-0.10.8-2026-04-22-23-16.apk) | 1회 |
@@ -21,6 +22,9 @@
 
 
 ## 변경 로그
+
+### 0.10.12 (2026-04-29 00:26) (2026-04-29)
+- verson up
 
 ### 0.10.11 (2026-04-28 23:58) (2026-04-29)
 - mp3 파일 업로드 개선
