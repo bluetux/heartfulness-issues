@@ -6,6 +6,7 @@
 ## 테스트 APK 다운로드
 | 버전 | 날짜 | 다운로드 | 횟수 |
 |------|------|---------|------|
+| `0.10.14 (2026-04-29 19:05)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.14-2026-04-29-19-05/heartfulness-0.10.14-2026-04-29-19-05.apk) | 0회 |
 | `0.10.13 (2026-04-29 14:32)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.13-2026-04-29-14-32/heartfulness-0.10.13-2026-04-29-14-32.apk) | 0회 |
 | `0.10.12 (2026-04-29 00:26)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.12-2026-04-29-00-26/heartfulness-0.10.12-2026-04-29-00-26.apk) | 0회 |
 | `0.10.11 (2026-04-28 23:58)` | 2026-04-29 | [📱 APK 다운로드](https://github.com/heartfulness/heartfulness-issues/releases/download/0.10.11-2026-04-28-23-58/heartfulness-0.10.11-2026-04-28-23-58.apk) | 0회 |
@@ -23,6 +24,9 @@
 
 
 ## 변경 로그
+
+### 0.10.14 (2026-04-29 19:05) (2026-04-29)
+- 아이콘 변경
 
 ### 0.10.13 (2026-04-29 14:32) (2026-04-29)
 - 앱등록을위한 사전빌들.. 아이콘은 아직까지 미적용.. 제대로된것을 받지 못함
